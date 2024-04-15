@@ -19,7 +19,7 @@
             margin: 1vh auto; /* Adjusted margin for better spacing */
             padding: 20px;
             box-sizing: border-box;
-            background-color: palegoldenrod;
+            background-color: rgb(71, 71, 71);
         }
         
         .button {
@@ -79,9 +79,9 @@
 </head>
 <body style="background-color:purple;">
     <div class="box1">
-        <input type="number" id="colorInput1" min="0" max="255" style="background-color: red;">
-        <input type="number" id="colorInput2" min="0" max="255" style="background-color: green;">
-        <input type="number" id="colorInput3" min="0" max="255" style="background-color: blue;">
+        <input type="number" id="colorInput1" min="0" max="255" style="background-color: red;" placeholder="Red" value="128">
+        <input type="number" id="colorInput2" min="0" max="255" style="background-color: green;" placeholder="Green" value="128">
+        <input type="number" id="colorInput3" min="0" max="255" style="background-color: blue;" placeholder="Blue" value="128">
     </div>
     <script>
         function bgColor(r, g, b) {
