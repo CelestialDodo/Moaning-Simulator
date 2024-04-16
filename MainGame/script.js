@@ -7,7 +7,7 @@ function enableButton() {
     canClick = true; 
     document.getElementById("clickButton").removeAttribute("disabled");
     document.querySelector('.button1:hover').style.backgroundColor = `rgb(138, 43, 226)`;
-    document.getElementById("clickButton").style.backgroundColor = "transparent";
+    document.getElementById("clickButton").style.backgroundColor = "";
 }
 
 // Check if localStorage is supported
