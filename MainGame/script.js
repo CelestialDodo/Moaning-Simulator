@@ -6,7 +6,7 @@ var canClick = true; // Variable to track if the button can be clicked
 function enableButton() {
     canClick = true; 
     document.getElementById("clickButton").removeAttribute("disabled");
-    document.getElementById("clickButton").style.borderColor = "rgb(138, 43, 226)";
+    document.getElementById("clickButton").style.backgroundColor = "rgb(138, 43, 226)";
 }
 
 // Check if localStorage is supported
@@ -36,7 +36,7 @@ if (typeof(Storage) !== "undefined") {
             canClick = false;
 
             // Change border color and enable the button after 2 seconds
-            document.getElementById("clickButton").style.borderColor = "rgb(118, 0, 189)";
+            document.getElementById("clickButton").style.backgroundColor = "rgb(118, 0, 189)";
             setTimeout(enableButton, 2000);
         }
     });
