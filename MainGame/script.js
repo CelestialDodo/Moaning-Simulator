@@ -7,7 +7,7 @@ function enableButton() {
     canClick = true; 
     document.getElementById("clickButton").removeAttribute("disabled");
     document.querySelector('.button1:hover').style.backgroundColor = `rgb(138, 43, 226)`;
-    document.getElementById("clickButton").style.backgroundColor = "";
+    document.querySelector('.button1').style.backgroundColor = "transparent";
 }
 
 // Check if localStorage is supported
@@ -38,7 +38,7 @@ if (typeof(Storage) !== "undefined") {
 
             // Change background color and enable the button after 2 seconds
             document.querySelector('.button1:hover').style.backgroundColor = `rgb(118, 0, 189)`;
-            document.getElementById("clickButton").style.backgroundColor = "rgb(118, 0, 189)";
+            document.querySelector('.button1').style.backgroundColor = "rgb(118, 0, 189)";
             setTimeout(enableButton, 2000);
         }
     });
