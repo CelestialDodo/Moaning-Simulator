@@ -6,6 +6,7 @@ var canClick = true; // Variable to track if the button can be clicked
 function enableButton() {
     canClick = true; 
     document.getElementById("clickButton").removeAttribute("disabled");
+    document.querySelector('.button1:hover').style.backgroundColor = `rgb(138, 43, 226)`;
     document.getElementById("clickButton").style.backgroundColor = "rgb(138, 43, 226)";
 }
 
@@ -36,6 +37,7 @@ if (typeof(Storage) !== "undefined") {
             canClick = false;
 
             // Change background color and enable the button after 2 seconds
+            document.querySelector('.button1:hover').style.backgroundColor = `rgb(118, 0, 189)`;
             document.getElementById("clickButton").style.backgroundColor = "rgb(118, 0, 189)";
             setTimeout(enableButton, 2000);
         }
