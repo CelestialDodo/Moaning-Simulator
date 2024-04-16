@@ -35,7 +35,7 @@ if (typeof(Storage) !== "undefined") {
             document.getElementById("clickButton").setAttribute("disabled", true);
             canClick = false;
 
-            // Change border color and enable the button after 2 seconds
+            // Change background color and enable the button after 2 seconds
             document.getElementById("clickButton").style.backgroundColor = "rgb(118, 0, 189)";
             setTimeout(enableButton, 2000);
         }
@@ -44,4 +44,3 @@ if (typeof(Storage) !== "undefined") {
     // Display an error message if localStorage is not supported
     document.getElementById("clickCount").textContent = "Sorry, your browser does not support web storage...";
 }
-
