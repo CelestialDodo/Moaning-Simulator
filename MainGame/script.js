@@ -31,7 +31,7 @@ if (typeof(Storage) !== "undefined") {
             localStorage.setItem("clickCount", clickCount);
             
             // Disable the button and set canClick to false
-            document.getElementById("clickButton").addAttribute("disabled");
+            document.getElementById("clickButton").setAttribute("disabled", true);
             canClick = false;
             
             // Enable the button after 2 seconds
