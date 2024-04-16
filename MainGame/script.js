@@ -5,7 +5,7 @@ var canClick = true; // Variable to track if the button can be clicked
 // Function to enable the button after a delay
 function enableButton() {
     canClick = true;
-    document.getElementById("clickButton").removeAttribute("disabled", false);
+    document.getElementById("clickButton").removeAttribute("disabled");
 }
 
 // Check if localStorage is supported
