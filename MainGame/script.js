@@ -4,8 +4,7 @@ var canClick = true; // Variable to track if the button can be clicked
 
 // Function to enable the button after a delay
 function enableButton() {
-    canClick = true;
-    document.getElementById("clickButton").removeAttribute("disabled");
+    canClick = true; document.getElementById("elementId").style.borderColor = "rgb(138, 43, 226)"; document.getElementById("clickButton").removeAttribute("disabled");
 }
 
 // Check if localStorage is supported
@@ -35,6 +34,7 @@ if (typeof(Storage) !== "undefined") {
             canClick = false;
             
             // Enable the button after 2 seconds
+            document.getElementById("elementId").style.borderColor = "rgb(118, 0, 189)";
             setTimeout(enableButton, 2500);
         }
     });
