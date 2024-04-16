@@ -35,7 +35,7 @@ if (typeof(Storage) !== "undefined") {
             canClick = false;
             
             // Enable the button after 2 seconds
-            setTimeout(enableButton, 2000);
+            setTimeout(enableButton, 2500);
         }
     });
 } else {
